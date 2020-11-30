@@ -29,7 +29,7 @@ First, clone this repository and prepare the EGTEA dataset.
 Then, download these four weight files: [i3d\_both\_base.pt](https://drive.google.com/uc?export=download&id=1gRfbOPMS59Ohv5Zul7tLc84WFA1f8-FZ), [i3d\_iga\_best1\_base.pt](https://drive.google.com/uc?export=download&id=1v2j51qwDO3sRv6NTpOCUcai8wbFasgzH), [i3d\_iga\_best1\_gaze.pt](https://drive.google.com/uc?export=download&id=17dAUe3tDeT83Km2Wkuiov6IiZoya45JE), [i3d\_iga\_best1\_attn.pt](https://drive.google.com/uc?export=download&id=1HjR3dOH5JAyPdGjFqwNjKuyMB4aRkAgx).
 Finally, put these files in the `weights` folder and just run
 
-`$ python main.py --mode val`
+`$ python main.py --mode test`
 
 This will reproduce the results reported in the paper.
 You can also train the model by running
