@@ -41,10 +41,10 @@ You can also train the model by running
 
 ## Citation
 ```bibtex
-@article{min2020integrating,
+@inproceedings{min2020integrating,
   title={Integrating Human Gaze into Attention for Egocentric Activity Recognition},
   author={Min, Kyle and Corso, Jason J},
-  journal={arXiv preprint arXiv:2011.03920},
-  year={2020}
+  booktitle={Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision},
+  pages={1069--1078}
 }
 ```
