@@ -21,12 +21,6 @@ class igazeDataset(torch.utils.data.Dataset):
         with open(os.path.join(datapath, dataset, '%s_split%d.txt' % (mode, data_split)), 'r') as f:
             self._parse_annts(f.readlines())
 
-        for datapath in ['/scratch/kylemin', '/data/kylemin', '/ss1/kylemin']:
-            if os.path.isdir(os.path.join(datapath, dataset)) and os.access(datapath, os.W_OK):
-                self.datapath = os.path.join(datapath, dataset)
-                break
-        print ('datapath for %s: %s' % (self.mode, self.datapath))
-
     def _parse_annts(self, lines):
         self.cnames, self.labels = [], []
         for l in lines:
