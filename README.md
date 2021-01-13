@@ -1,6 +1,6 @@
 # Gaze-Attention
 Integrating Human Gaze into Attention for Egocentric Activity Recognition (WACV 2021)\
-[**paper**](https://arxiv.org/abs/2011.03920) | [**presentation**](https://youtu.be/k-VUi54GjXQ)
+[**paper**](https://openaccess.thecvf.com/content/WACV2021/html/Min_Integrating_Human_Gaze_Into_Attention_for_Egocentric_Activity_Recognition_WACV_2021_paper.html) | [**presentation**](https://youtu.be/k-VUi54GjXQ)
 
 ## Overview
 It is well known that human gaze carries significant information about visual attention. In this work, we introduce an effective probabilistic approach to integrate human gaze into spatiotemporal attention for egocentric activity recognition. Specifically, we propose to reformulate the discrete training objective so that it can be optimized using an unbiased gradient estimator. It is empirically shown that our gaze-combined attention mechanism leads to a significant improvement of activity recognition performance on egocentric videos by providing additional cues across space and time.
@@ -13,8 +13,8 @@ It is well known that human gaze carries significant information about visual at
 | [MCN](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9139335) | I3D | 55.63 | - |
 | [Kapidis et al.](https://openaccess.thecvf.com/content_ICCVW_2019/papers/EPIC/Kapidis_Multitask_Learning_to_Improve_Egocentric_Action_Recognition_ICCVW_2019_paper.pdf) | MFNet | 59.44 | 66.59 |
 | [Lu et al.](https://openaccess.thecvf.com/content_ICCVW_2019/papers/EPIC/Lu_Learning_Spatiotemporal_Attention_for_Egocentric_Action_Recognition_ICCVW_2019_paper.pdf) | I3D | 60.54 | 68.60 |
-| [**Ours**](https://arxiv.org/abs/2011.03920) (reported)  | I3D | **62.84** | **69.58** |
-| [**Ours**](https://arxiv.org/abs/2011.03920) (updated)  | I3D | **63.09** | **69.73** |
+| [**Ours**](https://openaccess.thecvf.com/content/WACV2021/html/Min_Integrating_Human_Gaze_Into_Attention_for_Egocentric_Activity_Recognition_WACV_2021_paper.html) (reported)  | I3D | **62.84** | **69.58** |
+| [**Ours**](https://openaccess.thecvf.com/content/WACV2021/html/Min_Integrating_Human_Gaze_Into_Attention_for_Egocentric_Activity_Recognition_WACV_2021_paper.html) (updated)  | I3D | **63.09** | **69.73** |
 
 ## Direct Optimization through argmax
 [Direct optimization (NeurIPS 2019)](http://papers.neurips.cc/paper/8851-direct-optimization-through-arg-max-for-discrete-variational-auto-encoder.pdf) was originally proposed for learning a variational auto-encoder (VAE) with discrete latent variables. Unlike Gumbel-Softmax reparameterization technique, the direct optimization method introduces an unbiased gradient estimator for the discrete VAE that can be used even under the high-dimensional structured latent spaces. We demonstrate that our problem can be optimized effectively using the direct optimization method.
