@@ -32,7 +32,7 @@ parser.add_argument('--datapath', default='dataset', help='path to dataset')
 parser.add_argument('--datasplit', type=int, default=1, help='data split for the cross validation')
 parser.add_argument('--weight', default='weights/i3d_iga_best1_base.pt', help='path to the weight file for the base network')
 parser.add_argument('--seed', type=int, default=1, help='random seed')
-parser.add_argument('--sparse', type=int, default=0, help='whether to test sparsely for fast evaluation: True (1) | False (0)')
+parser.add_argument('--test_sparse', action='store_true', help='whether to test sparsely for fast evaluation')
 
 
 def main():
@@ -137,7 +137,7 @@ def print_args(exp_name):
         print ('wd:            %g' % args.wd)
         print ('eps, anneal:   %g, %g' % (args.eps, args.anneal))
     else:
-        print ('sparse:        %d' % args.sparse)
+        print ('test_sparse:   %s' % args.test_sparse)
 
 
 def adjust_lr(optimizer, step):
@@ -224,7 +224,7 @@ def test(test_loader, model_base, model_gaze, model_attn, num_action):
             len_video, height, width = rgb.shape[2:]
             top, left = (height-args.crop)//2, (width-args.crop)//2
             jump = args.trange
-            if args.sparse:
+            if args.test_sparse:
                 if len_video > args.trange*10:
                     jump = len_video // 10
 
