@@ -26,7 +26,7 @@ We use Grad-CAM++ to visualize the spatiotemporal responses of the last convolut
 
 ## Code Usage
 First, clone this repository and prepare the EGTEA dataset.
-Then, download these four weight files: [i3d\_both\_base.pt](https://drive.google.com/uc?export=download&id=1gRfbOPMS59Ohv5Zul7tLc84WFA1f8-FZ), [i3d\_iga\_best1\_base.pt](https://drive.google.com/uc?export=download&id=1v2j51qwDO3sRv6NTpOCUcai8wbFasgzH), [i3d\_iga\_best1\_gaze.pt](https://drive.google.com/uc?export=download&id=17dAUe3tDeT83Km2Wkuiov6IiZoya45JE), [i3d\_iga\_best1\_attn.pt](https://drive.google.com/uc?export=download&id=1HjR3dOH5JAyPdGjFqwNjKuyMB4aRkAgx).
+Then, download these four weight files: [i3d\_both\_base.pt](https://drive.google.com/file/d/1rrTU5xRibF6-hxd7pMBv-vP_ccjWf3GA/view?usp=drive_link), [i3d\_iga\_best1\_base.pt](https://drive.google.com/file/d/1GlYK5DcEx-S6Imh0yWAjveUH8vVzo4PS/view?usp=drive_link), [i3d\_iga\_best1\_gaze.pt](https://drive.google.com/file/d/1o1mbfepK4cHF2-c7_0pgO6Nf3_X6i74C/view?usp=drive_link), [i3d\_iga\_best1\_attn.pt](https://drive.google.com/file/d/1ry6-RvJ4Z0Y4VHfc93fElmQbDKimyAUg/view?usp=drive_link).
 Finally, put these files in the `weights` folder and just run
 
 `$ python main.py --mode test`
